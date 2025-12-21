@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabolic</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/43917da356.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@200..900&family=Zalando+Sans+SemiExpanded:wght@200..900&family=Zalando+Sans:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-950 w-full">
+
+    <header class="fixed w-full py-4 bg-zinc-950 border-b border-zinc-800 z-50">
+
+        <div class="w-full mx-auto md:px-12 lg:px-110 flex flex-col lg:flex-row justify-between items-center ">
+
+            <!-- Website Title -->
+            <div class="flex items-center gap-3 text-zinc-800">
+                <i class="fa-solid fa-circle-dot text-white fa-xl"></i>
+                <h1 class="text-lg font-bold zalando-sans-expanded select-none text-white">Parabolic</h1>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="zalando-sans text-zinc-400 hidden lg:block">
+                <ul class="flex flex-col md:flex-row text-sm gap-x-8 md:gap-x-2 justify-center items-center">
+                    <li class="hover:text-white px-2.5 py-1.5 rounded-md hover:bg-zinc-900 mx-auto"><a href="#">Product</a></li>
+                    <li class="hover:text-white px-2.5 py-1.5 rounded-md hover:bg-zinc-900 mx-auto"><a href="#">Resources</a></li>
+                    <li class="hover:text-white px-2.5 py-1.5 rounded-md hover:bg-zinc-900 mx-auto"><a href="#">Pricing</a></li>
+                    <li class="hover:text-white px-2.5 py-1.5 rounded-md hover:bg-zinc-900 mx-auto"><a href="#">Customers</a></li>
+                    <li class="hover:text-white px-2.5 py-1.5 rounded-md hover:bg-zinc-900 mx-auto"><a href="#">Now</a></li>
+                    <li class="hover:text-white px-2.5 py-1.5 rounded-md hover:bg-zinc-900 mx-auto"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Authentication Buttons -->
+            <div class="flex zalando-sans text-sm items-center space-x-4 text-zinc-400 hidden lg:block">
+                <button class="hover:text-white px-2.5 py-1.5 rounded-md hover:bg-zinc-900">Log in</button>
+                <button class="bg-neutral-200 text-zinc-950 px-2.5 py-1.5 rounded-md hover:bg-white">Sign up</button>
+            </div>
+
+        </div>
+ 
+    </header>
+
+    <main class="w-full pt-24">
+
+        <!-- Hero Section -->
+        <section class="w-full flex flex-col justify-center px-12 lg:px-110 py-24">
+
+            <!-- Hero Section Content -->
+            <h2 class="text-6xl font-bold text-white zalando-sans">
+                Parabolic is a purpose-built tool for planning and building products
+            </h2>
+
+            <!-- Hero Section Description -->
+            <p class="w-1/2 text-lg text-zinc-500 zalando-sans mt-8">
+                Meet the system for modern software development. Streamline issues, projects, and product roadmaps.
+            </p>
+
+            <!-- Hero Section Call-to-Action Buttons -->
+            <div class="w-full flex flex-col md:flex-row items-center gap-4 mt-8 zalando-sans">
+                <button class="bg-neutral-200 text-zinc-950 px-3 py-2 rounded-md hover:bg-white">Start Building</button>
+                <button class="flex gap-2 text-zinc-500 px-3 py-2 rounded-md hover:bg-zinc-800 hover:text-white">
+                    <div class="bg-gradient-to-r from-zinc-100 to-zinc-500 bg-clip-text text-transparent">
+                        New: Parabolic agent for Slack
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-angle-right fa-sm"></i>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Hero Section Image -->
+            <div class="w-auto flex gap-1 px-2 bg-zinc-950 border border-zinc-800 rounded-xl mt-8 -mx-50">
+
+                <!-- Side Menu -->
+                <div class="w-1/5 py-4.5 flex flex-col gap-2">
+
+                    <!-- App Navigation Buttons -->
+                    <div class="w-full flex justify-between px-2 py-1">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-circle fa-sm text-zinc-700"></i>
+                            <i class="fa-solid fa-circle fa-sm text-zinc-700"></i>
+                            <i class="fa-solid fa-circle fa-sm text-zinc-700"></i>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-arrow-left fa-md text-zinc-400"></i>
+                            <i class="fa-solid fa-arrow-right fa-md text-zinc-500"></i>
+                            <i class="fa-regular fa-clock fa-md text-zinc-400"></i>
+                        </div>
+                    </div>
+
+                    <!-- Project Navigation Buttons -->
+                    <div class="w-full flex justify-between px-2 py-1">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-circle-dot fa-md text-zinc-300"></i>
+                            <p class="zalando-sans text-zinc-300 text-lg">Parabolic</p>
+                            <i class="fa-solid fa-angle-down fa-md text-zinc-500"></i>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <i class="fas fa-search fa-md text-zinc-500"></i>
+                            <!-- <i class="fa-solid fa-pen-to-square fa-md text-zinc-500"></i> -->
+                        </div>
+                    </div>
+
+                    <!-- Inbox (Selected) -->
+                    <div class="w-full flex justify-between bg-zinc-800 rounded-md px-2 py-1">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-inbox fa-md text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-400 text-md">Inbox</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <p class="zalando-sans text-zinc-500 text-md">3</p>
+                        </div>
+                    </div>
+
+                    <!-- My Issues -->
+                    <div class="w-full flex justify-between px-2 py-1">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-expand fa-md text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-400 text-md">My Issues</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <p class="zalando-sans text-zinc-500 text-md">1</p>
+                        </div>
+                    </div>
+
+                    <!-- Workspace -->
+                    <div class="w-full flex justify-start gap-2 items-center -mb-2 px-2 py-1">
+                        <p class="zalando-sans text-zinc-600 text-sm">Workspace</p>
+                        <i class="fa-solid fas fa-caret-down fa-sm text-zinc-600"></i>
+                    </div>
+
+                    <!-- Initiatives -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-location-crosshairs fa-md text-zinc-400"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">Initiatives</p>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-cube fa-md text-zinc-400"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">Projects</p>
+                    </div>
+
+                    <!-- Views -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-layer-group fa-md text-zinc-400"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">Views</p>
+                    </div>
+
+                    <!-- Teams -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-people-group fa-md text-zinc-400"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">Teams</p>
+                    </div>
+
+                    <!-- Favourites -->
+                    <div class="w-full flex justify-start gap-2 items-center -mb-2 px-2 py-1">
+                        <p class="zalando-sans text-zinc-600 text-sm">Favourites</p>
+                        <i class="fa-solid fas fa-caret-down fa-sm text-zinc-600"></i>
+                    </div>
+
+                    <!-- Mobile App -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-mobile fa-md text-zinc-400"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">Mobile App</p>
+                    </div>
+
+                    <!-- 1Q26 Roadmap -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-map fa-md text-zinc-400"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">1Q26 Roadmap</p>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-folder fa-md text-zinc-400"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">Resources</p>
+                        <i class="fa-solid fas fa-caret-right fa-sm text-zinc-700"></i>
+                    </div>
+
+                    <!-- Docs -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-folder fa-md text-zinc-400"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">Docs</p>
+                        <i class="fa-solid fas fa-caret-right fa-sm text-zinc-700"></i>
+                    </div>
+
+                    <!-- Your teams -->
+                    <div class="w-full flex justify-start gap-2 items-center -mb-2 px-2 py-1">
+                        <p class="zalando-sans text-zinc-600 text-sm">Your teams</p>
+                        <i class="fa-solid fa-caret-down fa-sm text-zinc-600"></i>
+                    </div>
+
+                    <!-- Product -->
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1 -mb-2">
+                        <i class="fa-solid fa-pen-ruler fa-md text-sky-500"></i>
+                        <p class="zalando-sans text-zinc-400 text-md">Product</p>
+                        <i class="fa-solid fas fa-caret-right fa-sm text-zinc-700"></i>
+                    </div>
+
+                    <!-- Product Submenu (Hidden) -->
+                    <div class="w-full hidden flex flex-col justify-start pl-6">
+
+                        <!-- Issues -->
+                        <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                            <i class="fa-solid fa-bug fa-md text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-400 text-md">Issues</p>
+                        </div>
+
+                        <!-- Active -->
+                        <div class="w-full flex justify-start gap-2 items-center px-2 py-1 pl-3.5 ml-3.5 border-l-2 border-zinc-700">
+                            <p class="zalando-sans text-zinc-500 text-md">Active</p>
+                        </div>
+
+                        <!-- Backlog -->
+                        <div class="w-full flex justify-start gap-2 items-center px-2 py-1 pl-3.5 ml-3.5 border-l-2 border-zinc-700">
+                            <p class="zalando-sans text-zinc-500 text-md">Backlog</p>
+                        </div>
+                        
+                        <!-- Cycles -->
+                        <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                            <i class="fa-solid fa-arrows-rotate fa-md text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-400 text-md">Cycles</p>
+                        </div>
+
+                        <!-- Active -->
+                        <div class="w-full flex justify-start gap-2 items-center px-2 py-1 pl-3.5 ml-3.5 border-l-2 border-zinc-700">
+                            <p class="zalando-sans text-zinc-500 text-md">Active</p>
+                        </div>
+
+                        <!-- Upcoming -->
+                        <div class="w-full flex justify-start gap-2 items-center px-2 py-1 pl-3.5 ml-3.5 border-l-2 border-zinc-700">
+                            <p class="zalando-sans text-zinc-500 text-md">Upcoming</p>
+                        </div>
+
+                        <!-- Projects -->
+                        <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                            <i class="fa-solid fa-shapes fa-md text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-400 text-md">Projects</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Spacer -->
+                    <div class="w-full h-24"></div>
+
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-plus fa-sm text-zinc-600"></i>
+                        <p class="zalando-sans text-zinc-600 text-md">Invite people</p>
+                    </div>
+
+                    <div class="w-full flex justify-start gap-2 items-center px-2 py-1">
+                        <i class="fa-solid fa-message fa-sm text-zinc-600"></i>
+                        <p class="zalando-sans text-zinc-600 text-md">Help & Support</p>
+                    </div>
+
+                </div>
+
+                <!-- Main Screen -->
+                <div class="w-full h-auto flex my-2 bg-zinc-900 border border-zinc-800 rounded-lg">
+
+                        <!-- Inbox Menu -->
+                        <div class="w-2/6 h-full flex flex-col justify-start border-r border-zinc-800">
+
+                            <!-- Top Bar -->
+                            <div class="flex justify-between h-10 px-2 items-center border-b border-zinc-800">
+
+                                <!-- Inbox -->
+                                <p class="zalando-sans text-zinc-300 text-md">Inbox</p>
+
+                                <!-- Filters -->
+                                <div class="flex gap-2 items-center">
+                                    <i class="fa-solid fa-filter fa-md text-zinc-600"></i>
+                                    <i class="fa-solid fa-sliders fa-md text-zinc-600"></i>
+                                </div>
+                            </div>
+
+                            <!-- Email 1 (Read) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
+                                <img src="images/pp1.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover brightness-50">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-500 text-sm">Loom video</p>
+                                    <p class="zalando-sans text-zinc-500 text-xs">Mentioned by erin and 3 others</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-lime-600"></i>
+                                     <p class="zalando-sans text-zinc-500 text-xs">2h</p>
+                                </div>
+                            </div>
+
+                            <!-- Email 2 (Active) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-l-2 border-yellow-500 bg-zinc-800">
+                                <img src="images/pp2.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-300 text-sm">Create pillars</p>
+                                    <p class="zalando-sans text-zinc-400 text-xs">Assigned by andreas</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-yellow-500"></i>
+                                    <p class="zalando-sans text-zinc-400 text-xs">3h</p>
+                                </div>
+                            </div>
+
+                            <!-- Email 3 (Unread) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
+                                <img src="images/pp3.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-300 text-sm">Bug Report</p>
+                                    <p class="zalando-sans text-zinc-400 text-xs">Marked as done by Parabolic</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-lime-600"></i>
+                                    <p class="zalando-sans text-zinc-400 text-xs">5h</p>
+                                </div>
+                            </div>
+
+                            <!-- Email 4 (Unread) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
+                                <img src="images/pp2.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-300 text-sm">Old issue URLs should redi...</p>
+                                    <p class="zalando-sans text-zinc-400 text-xs">Assigned by andreas</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-lime-600"></i>
+                                    <p class="zalando-sans text-zinc-400 text-xs">12h</p>
+                                </div>
+                            </div>
+
+                            <!-- Email 5 (Unread) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
+                                <img src="images/pp2.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-300 text-sm">Make sure imports don't ki...</p>
+                                    <p class="zalando-sans text-zinc-400 text-xs">Assigned by miha</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-lime-600"></i>
+                                    <p class="zalando-sans text-zinc-400 text-xs">1d</p>
+                                </div>
+                            </div>
+
+                            <!-- Email 6 (Read) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
+                                <img src="images/pp4.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover brightness-50">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-500 text-sm">Wallpaper exploration</p>
+                                    <p class="zalando-sans text-zinc-500 text-xs">Mentioned by karri</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-yellow-500"></i>
+                                    <p class="zalando-sans text-zinc-500 text-xs">1d</p>
+                                </div>
+                            </div>
+
+                            <!-- Email 7 (Read) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
+                                <img src="images/pp2.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover brightness-50">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-500 text-sm">Add buttons to jump in time</p>
+                                    <p class="zalando-sans text-zinc-500 text-xs">Assigned by andreas</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-red-700"></i>
+                                    <p class="zalando-sans text-zinc-500 text-xs">2d</p>
+                                </div>
+                            </div>
+
+                            <!-- Email 8 (Read) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
+                                <img src="images/pp5.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover brightness-50">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-500 text-sm">Tooltips modals</p>
+                                    <p class="zalando-sans text-zinc-500 text-xs">Assigned by jori</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-lime-600"></i>
+                                    <p class="zalando-sans text-zinc-500 text-xs">2d</p>
+                                </div>
+                            </div>
+
+                            <!-- Email 9 (Read) -->
+                            <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
+                                <img src="images/pp2.jpg" alt="First Person" class="w-10 h-10 rounded-full object-cover brightness-50">
+                                <div class="w-full justify-start gap-2 items-center">
+                                    <p class="zalando-sans text-zinc-500 text-sm">Security assessment - Upv...</p>
+                                    <p class="zalando-sans text-zinc-500 text-xs">Assigned by andreas</p>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2 items-center">
+                                    <i class="fa-solid fa-circle fa-flip-horizontal text-lime-600"></i>
+                                    <p class="zalando-sans text-zinc-500 text-xs">3d</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Selected Mail Screen -->
+                        <div class="w-full h-full flex flex-col justify-start border-r border-zinc-800">
+
+                            <!-- Top Bar -->
+                            <div class="flex justify-between h-10 px-2 items-center border-b border-zinc-800">
+
+                                <!-- Inbox -->
+                                 <div class="flex gap-2 items-center">
+                                    <div class="w-6 h-6 flex items-center justify-center border border-zinc-700 bg-zinc-800 rounded-md">
+                                        <i class="fa-solid fa-angle-up fa-sm text-zinc-500"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center border border-zinc-700 bg-zinc-800 rounded-md">
+                                        <i class="fa-solid fa-angle-down fa-sm text-zinc-500"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Filters -->
+                                <div class="flex gap-2 items-center">
+                                    <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
+                                        <i class="fa-solid fa-eraser fa-sm text-zinc-500"></i>
+                                        <p class="zalando-sans text-zinc-400 text-sm">Delete notifications</p>
+                                    </button>
+                                    <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
+                                        <i class="fa-solid fa-clock fa-sm text-zinc-500"></i>
+                                        <p class="zalando-sans text-zinc-400 text-sm">Snooze</p>
+                                    </button>
+                                    <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
+                                        <i class="fa-solid fa-bell-slash fa-sm text-zinc-500"></i>
+                                        <p class="zalando-sans text-zinc-400 text-sm">Unsubscribe</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Mail Body -->
+                            <div class="flex flex-col justify-between h-full mx-20 my-10 gap-2 items-center">
+
+                                <!-- Header -->
+                                <div class="flex w-full gap-2 items-center justify-between">
+
+                                    <!-- Header Left -->
+                                    <div class="flex gap-4 items-center">
+                                        <div class="flex gap-1 items-center">
+                                            <p class="zalando-sans text-zinc-300 text-sm">Feature Requests</p>
+                                            <i class="fa-solid fa-angle-right fa-xs text-zinc-300"></i>
+                                            <p class="zalando-sans text-zinc-300 text-sm">FEA-185</p>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fa-regular fa-star fa-sm text-zinc-400"></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- Header Right -->
+                                     <div class="flex gap-3 items-center">
+                                        <i class="fa-solid fa-code-pull-request fa-sm text-zinc-400"></i>
+                                        <i class="fa-solid fa-link fa-sm text-zinc-400"></i>
+                                        <i class="fa-regular fa-copy fa-sm text-zinc-400"></i>
+                                        <p class="zalando-sans-expanded text-zinc-600 text-sm">|</p>
+                                        <i class="fa-solid fa-pen fa-sm text-zinc-400"></i>
+                                        <i class="fa-solid fa-ellipsis fa-sm text-zinc-400"></i>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- Specifics -->
+                                <div class="flex w-full gap-2 items-center justify-start pb-4 border-b border-zinc-700">
+
+                                    <!-- Status -->
+                                    <div class="flex gap-2 items-center bg-zinc-800 p-1 rounded-md">
+                                        <i class="fa-solid fa-circle fa-xs text-yellow-500"></i>
+                                        <p class="zalando-sans text-zinc-400 text-xs">In Progress</p>
+                                    </div>
+
+                                    <!-- User: adrien -->
+                                    <div class="flex gap-2 items-center bg-zinc-800 p-1 rounded-md">
+                                        <img src="images/pp7.jpg" alt="First Person" class="w-4 h-4 rounded-full object-cover">
+                                        <p class="zalando-sans text-zinc-400 text-xs">adrien</p>
+                                    </div>
+
+                                    <!-- No priority -->
+                                    <div class="flex gap-2 items-center bg-zinc-800 p-1 rounded-md">
+                                        <p class="zalando-sans text-zinc-500 text-xs">No priority</p>
+                                    </div>
+
+                                    <!-- No label -->
+                                    <div class="flex gap-2 items-center bg-zinc-800 p-1 rounded-md">
+                                        <i class="fa-solid fa-tag fa-xs text-zinc-500"></i>
+                                        <p class="zalando-sans text-zinc-400 text-xs">No label</p>
+                                    </div>
+
+                                    <!-- New feature -->
+                                    <div class="flex gap-2 items-center bg-zinc-800 p-1 rounded-md">
+                                        <i class="fa-solid fa-plane-departure fa-xs text-zinc-500"></i>
+                                        <p class="zalando-sans text-zinc-400 text-xs">New feature</p>
+                                    </div>
+
+                                    <!-- No cycle -->
+                                    <div class="flex gap-2 items-center bg-zinc-800 p-1 rounded-md">
+                                        <i class="fa-solid fa-arrows-rotate fa-xs text-zinc-500"></i>
+                                        <p class="zalando-sans text-zinc-500 text-xs">No cycle</p>
+                                    </div>
+
+                                    <!-- Ellipsis -->
+                                    <i class="fa-solid fa-ellipsis fa-sm text-zinc-500"></i>
+
+                                </div>
+
+                                <!-- Subject -->
+                                <div class="flex flex-col w-full gap-2 items-start justify-center pb-4 border-b border-zinc-700">
+                                    <h3 class="zalando-sans text-zinc-300 text-2xl">Create pillars</h3>
+                                    <p class="zalando-sans text-zinc-300 text-md">Set up power meter and charge controller</p>
+                                    <p class="zalando-sans text-md text-sky-600">https://encom.com/pillars</p>
+                                </div>
+
+                                <!-- Conversation Header -->
+                                <div class="flex w-full gap-2 items-center justify-between">
+
+                                    <!-- Header Left -->
+                                    <p class="zalando-sans text-zinc-300 text-sm">Activity</p>
+
+                                    <!-- Header Right -->
+                                     <div class="flex gap-3 items-center">
+                                        <p class="zalando-sans text-zinc-400 text-xs">Unsubscribe</p>
+                                        <img src="images/pp7.jpg" alt="First Person" class="w-4 h-4 rounded-full object-cover">
+                                        <i class="fa-solid fa-ellipsis fa-sm text-zinc-400"></i>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- New -->
+                                <div class="flex w-full gap-2 items-center justify-between">
+
+                                    <!-- Header Left -->
+                                    <p class="zalando-sans text-zinc-300 text-xs">New</p>
+                                    
+                                </div>
+
+                                <!-- Issue starter -->
+                                <div class="flex w-full gap-4 items-center mt-4 justify-start">
+
+                                    <img src="images/pp7.jpg" alt="First Person" class="w-4 h-4 rounded-full object-cover">
+                                    <p class="zalando-sans text-zinc-400 text-xs"><span class="text-zinc-300">adrien</span> created the issue.</p>
+                                    <p class="zalando-sans text-zinc-400 text-xs">7 days ago</p>
+                                    
+                                </div>
+
+                                <!-- Text 1 -->
+                                <div class="flex w-full gap-4 items-start mt-4 justify-center">
+
+                                    <img src="images/pp4.jpg" alt="First Person" class="w-8 h-8 rounded-full object-cover">
+
+                                    <!-- Text bubble -->
+                                    <div class="flex flex-col gap-2 bg-zinc-800 p-3 rounded-md">
+
+                                        <!-- Text Header -->
+                                        <div class="flex w-full gap-2 items-center justify-between">
+
+                                            <!-- Header Left -->
+                                            <div class="flex gap-3 items-center">
+                                                <p class="zalando-sans text-zinc-300 text-sm">Jori</p>
+                                                <p class="zalando-sans text-zinc-400 text-xs">3 days ago</p>
+                                            </div>
+
+                                            <!-- Header Right -->
+                                            <div class="flex gap-3 items-center">
+                                                <i class="fa-regular fa-face-smile fa-sm text-zinc-400"></i>
+                                                <i class="fa-solid fa-ellipsis fa-sm text-zinc-400"></i>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <!-- Text Body -->
+                                        <p class="zalando-sans text-zinc-400 text-sm">
+                                            <span class="text-zinc-300">@adrien</span>
+                                            We have these two (see EU-26) view options that are actually filters.
+                                            I'm thinking it would be nice if we could remove them/move them to filters,
+                                            in order to make the distinction between view options & filters more clear.
+                                            WDYT?
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- Spacer -->
+                                 <div class="w-full h-full"></div>
+
+                                <!-- Text Box -->
+                                <div class="w-full flex gap-4 items-start mt-4 justify-center">
+
+                                    <img src="images/pp7.jpg" alt="First Person" class="w-8 h-8 rounded-full object-cover">
+
+                                    <!-- Text bubble -->
+                                    <div class="w-full h-30 flex flex-col justify-between gap-2 bg-zinc-800 p-3 rounded-md">
+
+                                        <!-- Write a message -->
+                                        <p class="zalando-sans text-zinc-400 text-sm">Write a message...</p>
+
+                                        <!-- Message Options -->
+                                        <div class="flex w-full gap-2 items-center justify-between">
+
+                                            <!-- Options Left -->
+                                            <div class="flex gap-3 items-center justify-center">
+                                                <i class="fa-solid fa-paperclip fa-sm text-zinc-400"></i>
+                                            </div>
+
+                                            <!-- Options Right -->
+                                            <div class="flex gap-3 items-center">
+                                                <button class="zalando-sans text-zinc-300 text-sm bg-zinc-800 px-2 py-1 rounded-md border border-zinc-700 shadow-md">Send message</button>
+                                            </div>
+                                        
+                                        </div>
+
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                </div>
+            </div>
+
+            <!-- Client Companies -->
+            <div class="w-full flex flex-col items-center justify-center mt-8">
+
+                <h3 class="zalando-sans text-zinc-200 text-xl">Powering the world's best product teams.</h3>
+                <p class="zalando-sans text-zinc-400 text-xl">From next-gen startups to established enterprises.</p>
+                
+                <!-- Company Grid -->
+                 <div class="w-full grid grid-cols-4 grid-rows-2 gap-4 items-center justify-center mt-12">
+                    <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">OpenAI</p>
+                    <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">Cash App</p>
+                    <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">scale</p>
+                    <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">ramp</p>
+                    <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">Vercel</p>
+                    <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">coinbase</p>
+                    <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">BOOM</p>
+                    <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">CURSOR</p>
+                 </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
