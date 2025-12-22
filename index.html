@@ -74,7 +74,11 @@
             </div>
 
             <!-- Hero Section Image -->
-            <div class="w-auto flex gap-1 px-2 bg-zinc-950 border border-zinc-800 rounded-xl mt-8 -mx-50">
+            <div class="relative w-auto flex gap-1 px-2 bg-zinc-950 border border-zinc-800 rounded-xl mt-8 -mx-50 shadow-[10px_10px_30px_rgba(0,0,0,0.5)]">
+
+                <!-- Hero Section Image Background -->
+                <div class="absolute -z-10 w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-40 blur-[150px] rounded-full">
+                </div>
 
                 <!-- Side Menu -->
                 <div class="w-1/5 py-4.5 flex flex-col gap-2">
@@ -262,23 +266,61 @@
                 </div>
 
                 <!-- Main Screen -->
-                <div class="w-full h-auto flex my-2 bg-zinc-900 border border-zinc-800 rounded-lg">
+                <div class="w-full h-auto flex flex-col my-2 bg-zinc-900 border border-zinc-800 rounded-lg">
 
-                        <!-- Inbox Menu -->
-                        <div class="w-2/6 h-full flex flex-col justify-start border-r border-zinc-800">
+                    <!-- Top Bars -->
+                    <div class="w-full h-12 flex justify-start border-b border-zinc-800">
 
-                            <!-- Top Bar -->
-                            <div class="flex justify-between h-10 px-2 items-center border-b border-zinc-800">
+                        <!-- Inbox Top Bar -->
+                        <div class="flex justify-between w-1/4 h-full px-2 items-center border-r border-zinc-800">
 
-                                <!-- Inbox -->
-                                <p class="zalando-sans text-zinc-300 text-md">Inbox</p>
+                            <!-- Inbox -->
+                            <p class="zalando-sans text-zinc-300 text-md">Inbox</p>
 
-                                <!-- Filters -->
+                            <!-- Filters -->
+                            <div class="flex gap-2 items-center">
+                                <i class="fa-solid fa-filter fa-md text-zinc-600"></i>
+                                <i class="fa-solid fa-sliders fa-md text-zinc-600"></i>
+                            </div>
+                        
+                        </div>
+
+                        <!-- Mail Top Bar -->
+                        <div class="flex justify-between w-3/4 h-full px-2 items-center">
+
+                            <!-- Inbox -->
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-filter fa-md text-zinc-600"></i>
-                                    <i class="fa-solid fa-sliders fa-md text-zinc-600"></i>
+                                <div class="w-6 h-6 flex items-center justify-center border border-zinc-700 bg-zinc-800 rounded-md">
+                                    <i class="fa-solid fa-angle-up fa-sm text-zinc-500"></i>
+                                </div>
+                                <div class="w-6 h-6 flex items-center justify-center border border-zinc-700 bg-zinc-800 rounded-md">
+                                    <i class="fa-solid fa-angle-down fa-sm text-zinc-500"></i>
                                 </div>
                             </div>
+                            
+                            <!-- Filters -->
+                            <div class="flex gap-2 items-center">
+                                <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
+                                    <i class="fa-solid fa-eraser fa-sm text-zinc-500"></i>
+                                    <p class="zalando-sans text-zinc-400 text-sm">Delete notifications</p>
+                                </button>
+                                <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
+                                    <i class="fa-solid fa-clock fa-sm text-zinc-500"></i>
+                                    <p class="zalando-sans text-zinc-400 text-sm">Snooze</p>
+                                </button>
+                                <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
+                                    <i class="fa-solid fa-bell-slash fa-sm text-zinc-500"></i>
+                                    <p class="zalando-sans text-zinc-400 text-sm">Unsubscribe</p>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="w-full h-full flex justify-start">
+
+                        <!-- Inbox Menu -->
+                        <div class="w-1/4 h-full flex flex-col justify-start border-r border-zinc-800">
 
                             <!-- Email 1 (Read) -->
                             <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
@@ -289,7 +331,7 @@
                                 </div>
                                 <div class="flex flex-col justify-start gap-2 items-center">
                                     <i class="fa-solid fa-circle fa-flip-horizontal text-lime-600"></i>
-                                     <p class="zalando-sans text-zinc-500 text-xs">2h</p>
+                                        <p class="zalando-sans text-zinc-500 text-xs">2h</p>
                                 </div>
                             </div>
 
@@ -400,37 +442,7 @@
                         </div>
 
                         <!-- Selected Mail Screen -->
-                        <div class="w-full h-full flex flex-col justify-start border-r border-zinc-800">
-
-                            <!-- Top Bar -->
-                            <div class="flex justify-between h-10 px-2 items-center border-b border-zinc-800">
-
-                                <!-- Inbox -->
-                                 <div class="flex gap-2 items-center">
-                                    <div class="w-6 h-6 flex items-center justify-center border border-zinc-700 bg-zinc-800 rounded-md">
-                                        <i class="fa-solid fa-angle-up fa-sm text-zinc-500"></i>
-                                    </div>
-                                    <div class="w-6 h-6 flex items-center justify-center border border-zinc-700 bg-zinc-800 rounded-md">
-                                        <i class="fa-solid fa-angle-down fa-sm text-zinc-500"></i>
-                                    </div>
-                                </div>
-                                
-                                <!-- Filters -->
-                                <div class="flex gap-2 items-center">
-                                    <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
-                                        <i class="fa-solid fa-eraser fa-sm text-zinc-500"></i>
-                                        <p class="zalando-sans text-zinc-400 text-sm">Delete notifications</p>
-                                    </button>
-                                    <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
-                                        <i class="fa-solid fa-clock fa-sm text-zinc-500"></i>
-                                        <p class="zalando-sans text-zinc-400 text-sm">Snooze</p>
-                                    </button>
-                                    <button class="flex gap-2 items-center border border-zinc-700 bg-zinc-800 px-1 py-0.5 rounded-md">
-                                        <i class="fa-solid fa-bell-slash fa-sm text-zinc-500"></i>
-                                        <p class="zalando-sans text-zinc-400 text-sm">Unsubscribe</p>
-                                    </button>
-                                </div>
-                            </div>
+                        <div class="w-3/4 h-full flex flex-col justify-start">
 
                             <!-- Mail Body -->
                             <div class="flex flex-col justify-between h-full mx-20 my-10 gap-2 items-center">
@@ -451,7 +463,7 @@
                                     </div>
 
                                     <!-- Header Right -->
-                                     <div class="flex gap-3 items-center">
+                                        <div class="flex gap-3 items-center">
                                         <i class="fa-solid fa-code-pull-request fa-sm text-zinc-400"></i>
                                         <i class="fa-solid fa-link fa-sm text-zinc-400"></i>
                                         <i class="fa-regular fa-copy fa-sm text-zinc-400"></i>
@@ -519,7 +531,7 @@
                                     <p class="zalando-sans text-zinc-300 text-sm">Activity</p>
 
                                     <!-- Header Right -->
-                                     <div class="flex gap-3 items-center">
+                                        <div class="flex gap-3 items-center">
                                         <p class="zalando-sans text-zinc-400 text-xs">Unsubscribe</p>
                                         <img src="images/pp7.jpg" alt="First Person" class="w-4 h-4 rounded-full object-cover">
                                         <i class="fa-solid fa-ellipsis fa-sm text-zinc-400"></i>
@@ -582,7 +594,7 @@
                                 </div>
 
                                 <!-- Spacer -->
-                                 <div class="w-full h-full"></div>
+                                    <div class="w-full h-full"></div>
 
                                 <!-- Text Box -->
                                 <div class="w-full flex gap-4 items-start mt-4 justify-center">
@@ -619,6 +631,8 @@
 
                         </div>
 
+                    </div>
+
                 </div>
             </div>
 
@@ -629,7 +643,7 @@
                 <p class="zalando-sans text-zinc-400 text-xl">From next-gen startups to established enterprises.</p>
                 
                 <!-- Company Grid -->
-                 <div class="w-full grid grid-cols-4 grid-rows-2 gap-4 items-center justify-center mt-12">
+                <div class="w-full grid grid-cols-4 grid-rows-2 gap-4 items-center justify-center mt-12">
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">OpenAI</p>
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">Cash App</p>
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">scale</p>
@@ -638,8 +652,339 @@
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">coinbase</p>
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">BOOM</p>
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">CURSOR</p>
-                 </div>
+                </div>
 
+            </div>
+
+        </section>
+
+        <!-- Feature List -->
+        <section class="w-full flex flex-col gap-12 justify-center px-12 lg:px-110 py-24">
+
+            <!-- Feature List Header -->
+            <div class="w-full flex items-center justify-center gap-6">
+                <div class="w-1/2">
+                    <h3 class="zalando-sans text-zinc-200 text-6xl">
+                        Made for modern product teams
+                    </h3>
+                </div>
+                <div class="w-1/2">
+                    <p class="zalando-sans text-zinc-400 text-md">
+                        Parabolic is shaped by the practices and principles that distinguish world-class product teams from the rest:
+                        relentless focus, fast execution, and a commitment to the quality of the craft.
+                        <a href="#" class="zalando-sans text-zinc-200 text-md flex items-center gap-2">
+                            Make the switch
+                            <i class="fa-solid fa-angle-right fa-sm text-zinc-200"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature List Items -->
+            <div class="relative flex items-center justify-center gap-2">
+
+                <!-- Feature List Background -->
+                <div class="absolute -z-10 w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-15 blur-[100px] rounded-full">
+                </div>
+
+                <!-- Card 1 -->
+                <div class="relative w-1/3 h-80 flex flex-col justify-end items-center gap-2 p-6 rounded-4xl backdrop-blur shadow-xl/10 shadow-white border-2 border-white/10 scale-[0.98] hover:scale-[1.02] transition-all duration-300 overflow-hidden">
+                    <div class="absolute w-full h-full inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-xl"></div>
+                    <!-- Layered panels -->
+                <div class="absolute top-5 space-y-4 opacity-40">
+                    <div class="w-40 h-24 bg-white/10 rounded-2xl -translate-x-5"></div>
+                    <div class="w-44 h-24 bg-white/8 rounded-2xl translate-x-5"></div>
+                </div>
+                    <p class="zalando-sans text-zinc-200 text-xl">
+                        Purpose-built for product development
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative w-1/3 h-80 flex flex-col justify-end items-center gap-2 p-4 rounded-4xl backdrop-blur shadow-xl/10 shadow-white border-2 border-white/10 scale-[0.98] hover:scale-[1.02] transition-all duration-300 overflow-hidden">
+                    <div class="absolute w-full h-full inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-xl"></div>
+                    
+                    <!-- Motion lines -->
+                    <div
+                    class="absolute inset-0 opacity-30"
+                    style="background-image: repeating-linear-gradient(-45deg, transparent, transparent 12px, rgba(255,255,255,0.12) 14px);"
+                    ></div>
+
+                    <!-- Floating metric -->
+                    <span class="w-full h-full flex items-center justify-center text-4xl text-white/40 zalando-sans">
+                        50ms
+                    </span>
+
+                    <p class="zalando-sans text-zinc-200 text-xl">
+                        Designed to move fast
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative w-1/3 h-80 flex flex-col justify-end items-center gap-2 p-4 rounded-4xl backdrop-blur shadow-xl/10 shadow-white border-2 border-white/10 scale-[0.98] hover:scale-[1.02] transition-all duration-300 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-xl"></div>
+                    
+                    <div
+                    class="absolute w-full h-full inset-0 opacity-50"
+                    style="
+                    background-image: linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px);
+                    background-size: 36px 36px;
+                    "></div>
+
+                    <div class="flex items-center justify-center w-full h-full inset-0"
+                    style="background-image: radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 70%);">
+                    
+                        <div class="my-auto top-16 left-16 px-4 py-2 border border-white/20 rounded-lg text-white/60 text-xl zalando-sans">
+                            + Create
+                        </div>
+
+                    </div>
+
+                    <p class="zalando-sans text-zinc-200 text-xl">
+                        Crafted to perfection
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Feature Description 1 -->
+        <section class="relative w-full flex flex-col gap-12 justify-center items-center px-12 lg:px-110 py-24">
+
+            <!-- Top Glow -->
+            <div class="absolute w-full h-1/2 top-0 bg-gradient-to-b from-purple-500 to-transparent opacity-12 blur-[8px] -z-10"></div>
+
+            <!-- Title -->
+            <h3 class="w-full zalando-sans text-zinc-200 text-5xl">
+                AI-assisted product development
+            </h3>
+
+            <!-- Description -->
+            <div class="w-1/2 mr-auto zalando-sans text-zinc-400 text-lg">
+                <p class="mb-4">
+                    <span class="text-zinc-200">
+                        Parabolic for Agents.
+                    </span>
+                    Choose from a variety of AI agents and start delegating work, from code generation to other technical tasks.
+                </p>
+                <button class="bg-zinc-700/50 hover:bg-zinc-700/60 rounded-lg text-zinc-200 text-sm px-3 py-1.5 mr-auto border border-zinc-600 zalando-sans">
+                    Learn more <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+
+            <!-- UI Design -->
+            <div class="relative w-8/10 flex flex-col justify-start items-center rounded-xl bg-white/5 border border-white/30">
+
+                <!-- Specular Highlight -->
+                <div class="absolute top-0 left-0 w-full h-[1px] pointer-events-none"
+                style="background: linear-gradient(to right,transparent, rgba(255,255,255,0.5), transparent);"></div>
+                <div class="absolute top-0 left-0 w-full h-4 z-10 pointer-events-none"
+                style="background: radial-gradient(ellipse at center top, rgba(255,255,255,0.35), transparent 80%); filter: blur(8px);"></div>
+
+                <!-- Central Glow -->
+                <div class="absolute inset-0 z-10 pointer-events-none"
+                style="background-image: radial-gradient(circle at 50% -30%, rgba(255,255,255,0.22), rgba(255,255,255,0.06) 30%, transparent 70%);"></div>
+
+                <!-- Top Glow -->
+                <div class="absolute w-full h-full bg-gradient-to-b from-white/15 to-transparent rounded-t-xl -z-10"></div>
+
+                <!-- Bottom Vignette -->
+                <div class="absolute w-full h-full inset-0 bg-gradient-to-b from-transparent to-zinc-950/90 rounded-t-xl z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
+
+                <!-- Assign to... Button -->
+                <button class="w-full bg-zinc-700/20 hover:bg-zinc-700/30 text-zinc-400 text-lg px-4 py-3 border-b border-zinc-600/60 zalando-sans text-left">
+                    Assign to...
+                </button>
+
+                <!-- Agent 1 -->
+                <div class="w-full flex gap-3 px-4 py-2 justify-start items-center z-10 hover:scale-105 hover:bg-white/20 hover:rounded-xl hover:shadow-lg hover:border-b hover:border-white/50 hover:backdrop-blur transition-all duration-300">
+                    <i class="fas fa-circle text-zinc-700"></i>
+                    <p class="zalando-sans text-zinc-300 text-lg">
+                        Cursor
+                    </p>
+                    <p class="zalando-sans bg-zinc-800 text-zinc-400 text-xs px-2 py-1 rounded-md">
+                        Agent
+                    </p>
+                </div>
+
+                <!-- Agent 2 -->
+                <div class="w-full flex gap-3 px-4 py-2 justify-start items-center z-10 hover:scale-105 hover:bg-white/20 hover:rounded-xl hover:shadow-lg hover:border-b hover:border-white/50 hover:backdrop-blur transition-all duration-300">
+                    <i class="fas fa-circle text-zinc-700"></i>
+                    <p class="zalando-sans text-zinc-300 text-lg">
+                        Github Copilot
+                    </p>
+                    <p class="zalando-sans bg-zinc-800 text-zinc-400 text-xs px-2 py-1 rounded-md">
+                        Agent
+                    </p>
+                </div>
+
+                <!-- Agent 3 -->
+                <div class="w-full flex gap-3 px-4 py-2 justify-start items-center z-10 hover:scale-105 hover:bg-white/20 hover:rounded-xl hover:shadow-lg hover:border-b hover:border-white/50 hover:backdrop-blur transition-all duration-300">
+                    <i class="fas fa-circle text-zinc-700"></i>
+                    <p class="zalando-sans text-zinc-300 text-lg">
+                        Sentry
+                    </p>
+                    <p class="zalando-sans bg-zinc-800 text-zinc-400 text-xs px-2 py-1 rounded-md">
+                        Agent
+                    </p>
+                </div>
+
+                <!-- Agent 4 -->
+                <div class="w-full flex gap-3 px-4 py-2 justify-start items-center z-10 hover:scale-105 hover:bg-white/20 hover:rounded-xl hover:shadow-lg hover:border-b hover:border-white/50 hover:backdrop-blur transition-all duration-300">
+                    <i class="fas fa-circle text-zinc-700"></i>
+                    <p class="zalando-sans text-zinc-300 text-lg">
+                        Leela
+                    </p>
+                    <p class="zalando-sans bg-zinc-800 text-zinc-400 text-xs px-2 py-1 rounded-md hidden">
+                        Agent
+                    </p>
+                </div>
+
+                <!-- Agent 5 -->
+                <div class="w-full flex gap-3 px-4 py-2 justify-start items-center z-10 hover:scale-105 hover:bg-white/20 hover:rounded-xl hover:shadow-lg hover:border-b hover:border-white/50 hover:backdrop-blur transition-all duration-300">
+                    <i class="fas fa-circle text-zinc-700"></i>
+                    <p class="zalando-sans text-zinc-300 text-lg">
+                        Codex
+                    </p>
+                    <p class="zalando-sans bg-zinc-800 text-zinc-400 text-xs px-2 py-1 rounded-md">
+                        Agent
+                    </p>
+                </div>
+
+                <!-- Agent 6 -->
+                <div class="w-full flex gap-3 px-4 py-2 justify-start items-center z-10 hover:scale-105 hover:bg-white/20 hover:rounded-xl hover:shadow-lg hover:border-b hover:border-white/50 hover:backdrop-blur transition-all duration-300">
+                    <i class="fas fa-circle text-zinc-700"></i>
+                    <p class="zalando-sans text-zinc-300 text-lg">
+                        Conor
+                    </p>
+                    <p class="zalando-sans bg-zinc-800 text-zinc-400 text-xs px-2 py-1 rounded-md hidden">
+                        Agent
+                    </p>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <!-- Feature Description 2 -->
+        <section class="w-auto flex justify-center items-start mx-12 lg:mx-110 border-t border-zinc-800 divide-x divide-zinc-800">
+
+            <!-- Left Feature -->
+            <div class="relative w-1/2 pr-12 py-16">
+
+                <h3 class="w-full zalando-sans text-zinc-200 text-xl">
+                    Self-driving product operations
+                </h3>
+                <p class="w-full zalando-sans text-zinc-500 text-md">
+                    Streamline your product development workflows with AI assistance for routine, manual tasks.
+                </p>
+
+                <div class="w-auto flex flex-col gap-2 justify-center items-start mt-10 p-5 bg-zinc-900/70 border border-zinc-800 rounded-xl">
+
+                    <div class="w-full flex justify-start items-center gap-2">
+                        <i class="fas fa-hexagon-nodes fa-sm text-zinc-500"></i>
+                        <p class="zalando-sans text-zinc-400 text-sm">Triage Intelligence</p>
+                    </div>
+
+                    <div class="w-full flex justify-start items-center gap-2">
+
+                        <p class="zalando-sans text-zinc-500 text-sm">Suggestions</p>
+
+                        <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
+                            <img src="images/pp4.jpg" alt="" class="w-4 h-4 rounded-full object-cover">
+                            <p class="zalando-sans text-zinc-400 text-xs">miha</p>
+                        </div>
+
+                        <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
+                            <i class="fas fa-mobile fa-xs text-zinc-600"></i>
+                            <p class="zalando-sans text-zinc-400 text-xs">Mobile App Refact...</p>
+                        </div>
+
+                        <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
+                            <i class="fas fa-circle fa-xs text-red-400/60"></i>
+                            <p class="zalando-sans text-zinc-400 text-xs">Slack</p>
+                        </div>
+
+                    </div>
+
+                    <p class="zalando-sans text-zinc-500 text-sm">Duplicate of</p>
+
+                    <p class="zalando-sans text-zinc-500 text-sm">Related to</p>
+
+                </div>
+
+                <div class="absolute w-72 bottom-8 right-12 flex flex-col justify-between items-start mt-10 px-5 py-3 gap-6 bg-white/20 backdrop-blur-sm border border-white/50 rounded-2xl z-10">
+
+                    <p class="w-full zalando-sans text-zinc-400 text-md pb-2">Ask anything</p>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                            <i class="fas fa-paperclip fa-xs text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-300 text-xs">Attach</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                            <i class="fas fa-globe fa-xs text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-300 text-xs">Search</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                            <i class="fas fa-lightbulb fa-xs text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-300 text-xs">Reason</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Feature -->
+            <div class="relative w-1/2 mx-12 py-16">
+
+                <!-- Bottom Vignette -->
+                <div class="absolute bottom-8 w-full h-60 bg-gradient-to-b from-transparent to-zinc-950/70 z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
+                <!-- Right Vignette -->
+                <div class="absolute bottom-8 w-full h-60 bg-gradient-to-r from-transparent to-zinc-950 z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
+
+                <h3 class="w-full zalando-sans text-zinc-200 text-xl">
+                    Parabolic MCP
+                </h3>
+                <p class="w-full zalando-sans text-zinc-500 text-md">
+                    Connect Parabolic to your favorite tools including Cursor, Claude, ChatGPT, and more.
+                </p>
+
+                <div class="w-auto flex flex-col justify-center items-start mt-10 mx-5 p-5 bg-zinc-900/70 border border-zinc-800 rounded-xl">
+
+                    <p class="w-full zalando-sans text-zinc-600 text-sm pb-2">//mcp.parabolic.app/sse</p>
+                    <p class="w-full zalando-sans text-zinc-500 text-sm"><span class="text-orange-300/40">"mcpServers"</span>: {</p>
+                    <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">     <span class="text-orange-300/40">"parabolic"</span>: {</p>
+                    <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">         <span class="text-orange-300/40">"command"</span>: <span class="text-sky-300/40">"ppx"</span>,</p>
+                    <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">         <span class="text-orange-300/40">"test"</span>: <span class="text-sky-300/40">"run tests till end of time"</span></p>
+                    <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">     }</p>
+                    <p class="w-full zalando-sans text-zinc-500 text-sm">}</p>
+
+                </div>
+
+                <div class="absolute w-full bottom-10 flex flex-col justify-between items-start mt-10 px-5 py-3 gap-6 bg-white/20 backdrop-blur-sm border border-white/50 rounded-2xl z-10">
+
+                    <p class="w-full zalando-sans text-zinc-400 text-md pb-2">Ask anything</p>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                            <i class="fas fa-paperclip fa-xs text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-300 text-xs">Attach</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                            <i class="fas fa-globe fa-xs text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-300 text-xs">Search</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                            <i class="fas fa-lightbulb fa-xs text-zinc-400"></i>
+                            <p class="zalando-sans text-zinc-300 text-xs">Reason</p>
+                        </div>
+                    </div>
+
+                </div>
+                
             </div>
 
         </section>
