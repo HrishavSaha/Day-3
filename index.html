@@ -45,18 +45,18 @@
  
     </header>
 
-    <main class="w-full pt-24">
+    <main class="w-full pt-12 lg:pt-24">
 
         <!-- Hero Section -->
         <section class="w-full flex flex-col justify-center px-12 lg:px-110 py-24">
 
             <!-- Hero Section Content -->
-            <h2 class="text-6xl font-bold text-white zalando-sans">
+            <h2 class="text-2xl lg:text-6xl font-bold text-white zalando-sans">
                 Parabolic is a purpose-built tool for planning and building products
             </h2>
 
             <!-- Hero Section Description -->
-            <p class="w-1/2 text-lg text-zinc-500 zalando-sans mt-8">
+            <p class="w-full lg:w-1/2 text-lg text-zinc-500 zalando-sans mt-8">
                 Meet the system for modern software development. Streamline issues, projects, and product roadmaps.
             </p>
 
@@ -74,14 +74,14 @@
             </div>
 
             <!-- Hero Section Image -->
-            <div class="relative w-auto flex gap-1 px-2 bg-zinc-950 border border-zinc-800 rounded-xl mt-8 -mx-50 shadow-[10px_10px_30px_rgba(0,0,0,0.5)]">
+            <div class="relative w-auto flex gap-1 px-2 bg-zinc-950 border border-zinc-800 rounded-xl mt-8 lg:-mx-50 shadow-[10px_10px_30px_rgba(0,0,0,0.5)]">
 
                 <!-- Hero Section Image Background -->
                 <div class="absolute -z-10 w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-40 blur-[150px] rounded-full">
                 </div>
 
                 <!-- Side Menu -->
-                <div class="w-1/5 py-4.5 flex flex-col gap-2">
+                <div class="lg:w-1/5 py-4.5 flex-col gap-2 hidden lg:flex">
 
                     <!-- App Navigation Buttons -->
                     <div class="w-full flex justify-between px-2 py-1">
@@ -272,7 +272,7 @@
                     <div class="w-full h-12 flex justify-start border-b border-zinc-800">
 
                         <!-- Inbox Top Bar -->
-                        <div class="flex justify-between w-1/4 h-full px-2 items-center border-r border-zinc-800">
+                        <div class="flex justify-between w-full lg:w-1/4 h-full px-2 items-center border-r border-zinc-800">
 
                             <!-- Inbox -->
                             <p class="zalando-sans text-zinc-300 text-md">Inbox</p>
@@ -286,7 +286,7 @@
                         </div>
 
                         <!-- Mail Top Bar -->
-                        <div class="flex justify-between w-3/4 h-full px-2 items-center">
+                        <div class="justify-between h-full px-2 items-center hidden lg:flex lg:w-3/4">
 
                             <!-- Inbox -->
                                 <div class="flex gap-2 items-center">
@@ -320,7 +320,7 @@
                     <div class="w-full h-full flex justify-start">
 
                         <!-- Inbox Menu -->
-                        <div class="w-1/4 h-full flex flex-col justify-start border-r border-zinc-800">
+                        <div class="w-full lg:w-1/4 h-full flex flex-col justify-start border-r border-zinc-800">
 
                             <!-- Email 1 (Read) -->
                             <div class="w-full flex justify-center gap-2 items-center p-2 border-b border-zinc-800">
@@ -442,7 +442,7 @@
                         </div>
 
                         <!-- Selected Mail Screen -->
-                        <div class="w-3/4 h-full flex flex-col justify-start">
+                        <div class="h-full flex-col justify-start hidden lg:flex lg:w-3/4">
 
                             <!-- Mail Body -->
                             <div class="flex flex-col justify-between h-full mx-20 my-10 gap-2 items-center">
@@ -634,6 +634,7 @@
                     </div>
 
                 </div>
+
             </div>
 
             <!-- Client Companies -->
@@ -643,7 +644,7 @@
                 <p class="zalando-sans text-zinc-400 text-xl">From next-gen startups to established enterprises.</p>
                 
                 <!-- Company Grid -->
-                <div class="w-full grid grid-cols-4 grid-rows-2 gap-4 items-center justify-center mt-12">
+                <div class="w-full grid grid-cols-1 grid-rows-8 lg:grid-cols-4 lg:grid-rows-2 gap-4 items-center justify-center mt-12">
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">OpenAI</p>
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">Cash App</p>
                     <p class="zalando-sans-expanded text-zinc-200 text-2xl py-5 m-auto">scale</p>
@@ -662,12 +663,14 @@
         <section class="w-full flex flex-col gap-12 justify-center px-12 lg:px-110 py-24">
 
             <!-- Feature List Header -->
-            <div class="w-full flex items-center justify-center gap-6">
+            <div class="w-full flex flex-col lg:flex-row items-center justify-center gap-6">
+
                 <div class="w-1/2">
                     <h3 class="zalando-sans text-zinc-200 text-6xl">
                         Made for modern product teams
                     </h3>
                 </div>
+
                 <div class="w-1/2">
                     <p class="zalando-sans text-zinc-400 text-md">
                         Parabolic is shaped by the practices and principles that distinguish world-class product teams from the rest:
@@ -678,10 +681,11 @@
                         </a>
                     </p>
                 </div>
+
             </div>
 
             <!-- Feature List Items -->
-            <div class="relative flex items-center justify-center gap-2">
+            <div class="relative flex flex-col lg:flex-row items-center justify-center gap-2">
 
                 <!-- Feature List Background -->
                 <div class="absolute -z-10 w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-15 blur-[100px] rounded-full">
@@ -868,10 +872,10 @@
         </section>
 
         <!-- Feature Description 2 -->
-        <section class="w-auto h-auto flex justify-center items-start mx-12 lg:mx-110 border-y border-zinc-800 divide-x divide-zinc-800">
+        <section class="w-auto h-auto flex flex-col lg:flex-row justify-center items-start mx-12 lg:mx-110 border-y border-zinc-800 divide-x divide-zinc-800">
 
             <!-- Left Feature -->
-            <div class="w-1/2 h-auto flex flex-col justify-start items-start pr-12 pt-16">
+            <div class="w-full lg:w-1/2 h-auto flex flex-col justify-start items-start pr-12 pt-16">
 
                 <h3 class="w-full zalando-sans text-zinc-200 text-xl">
                     Self-driving product operations
@@ -1019,7 +1023,7 @@
         </section>
 
         <!-- Feature Description 3 -->
-        <section class="w-auto flex gap-6 justify-center items-center mx-12 lg:mx-110 py-12">
+        <section class="w-auto flex flex-col lg:flex-row gap-6 justify-center items-center mx-12 lg:mx-110 py-12">
 
             <div class="w-full flex flex-col justify-center items-center gap-2">
 
@@ -1068,7 +1072,7 @@
         </section>
 
         <!-- CTA Buttons -->
-        <section class="w-full flex justify-between items-center gap-4 px-12 lg:px-110 pb-24">
+        <section class="w-full flex flex-col lg:flex-row justify-between items-center gap-4 px-12 lg:px-110 pb-24">
 
             <p class="zalando-sans text-zinc-100 text-4xl">Plan the present. Build the future.</p>
 
@@ -1081,7 +1085,7 @@
 
     </main>
 
-    <footer class="flex justify-between items-start px-12 lg:px-110 py-12 zalando-sans border-t border-zinc-800">
+    <footer class="w-full flex flex-col lg:flex-row justify-between items-start px-12 lg:px-110 py-12 zalando-sans border-t border-zinc-800">
         
         <div class="flex flex-col justify-start gap-2">
             <div class="flex items-center gap-2">
