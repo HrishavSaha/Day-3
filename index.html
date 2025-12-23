@@ -868,10 +868,10 @@
         </section>
 
         <!-- Feature Description 2 -->
-        <section class="w-auto flex justify-center items-start mx-12 lg:mx-110 border-t border-zinc-800 divide-x divide-zinc-800">
+        <section class="w-auto h-auto flex justify-center items-start mx-12 lg:mx-110 border-y border-zinc-800 divide-x divide-zinc-800">
 
             <!-- Left Feature -->
-            <div class="relative w-1/2 pr-12 py-16">
+            <div class="w-1/2 h-auto flex flex-col justify-start items-start pr-12 pt-16">
 
                 <h3 class="w-full zalando-sans text-zinc-200 text-xl">
                     Self-driving product operations
@@ -880,57 +880,83 @@
                     Streamline your product development workflows with AI assistance for routine, manual tasks.
                 </p>
 
-                <div class="w-auto flex flex-col gap-2 justify-center items-start mt-10 p-5 bg-zinc-900/70 border border-zinc-800 rounded-xl">
+                <div class="w-full h-90 relative mt-16 mb-1">
 
-                    <div class="w-full flex justify-start items-center gap-2">
-                        <i class="fas fa-hexagon-nodes fa-sm text-zinc-500"></i>
-                        <p class="zalando-sans text-zinc-400 text-sm">Triage Intelligence</p>
+                    <!-- Top Vignette -->
+                    <div class="absolute w-full h-full bg-gradient-to-t from-transparent to-zinc-950/40 z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
+                    <!-- Right Vignette -->
+                    <div class="absolute w-full h-full bg-gradient-to-r from-transparent to-zinc-950 z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
+
+                    <div class="w-full flex flex-col gap-2 justify-center items-start p-5 bg-zinc-900/70 border border-zinc-700 rounded-xl">
+
+                        <div class="w-full flex justify-start items-center gap-2">
+                            <i class="fas fa-hexagon-nodes fa-sm text-zinc-300"></i>
+                            <p class="zalando-sans text-zinc-200 text-sm">Triage Intelligence</p>
+                        </div>
+
+                        <div class="w-full flex justify-start items-center gap-2">
+
+                            <p class="zalando-sans text-zinc-400 text-sm">Suggestions</p>
+
+                            <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
+                                <img src="images/pp4.jpg" alt="" class="w-4 h-4 rounded-full object-cover">
+                                <p class="zalando-sans text-zinc-400 text-xs">miha</p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
+                                <i class="fas fa-mobile fa-xs text-zinc-600"></i>
+                                <p class="zalando-sans text-zinc-400 text-xs">Mobile App Refact...</p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
+                                <i class="fas fa-circle fa-xs text-red-400/60"></i>
+                                <p class="zalando-sans text-zinc-400 text-xs">Slack</p>
+                            </div>
+
+                        </div>
+
+                        <p class="zalando-sans text-zinc-400 text-sm">Duplicate of</p>
+
+                        <p class="zalando-sans text-zinc-400 text-sm">Related to</p>
+
                     </div>
 
-                    <div class="w-full flex justify-start items-center gap-2">
+                    <div class="absolute w-[73%] top-19 right-0 flex flex-col justify-between items-start px-5 bg-zinc-950 backdrop-blur-sm border border-zinc-700 rounded-lg z-10">
 
-                        <p class="zalando-sans text-zinc-500 text-sm">Suggestions</p>
-
-                        <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
+                        <div class="w-full flex justify-start items-center gap-1 border-b border-zinc-800 px-1 py-3">
                             <img src="images/pp4.jpg" alt="" class="w-4 h-4 rounded-full object-cover">
-                            <p class="zalando-sans text-zinc-400 text-xs">miha</p>
+                            <p class="zalando-sans text-zinc-300 text-xs">miha</p>
                         </div>
 
-                        <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
-                            <i class="fas fa-mobile fa-xs text-zinc-600"></i>
-                            <p class="zalando-sans text-zinc-400 text-xs">Mobile App Refact...</p>
+                        <div class="w-full flex flex-col border-b border-zinc-800 px-1 py-3">
+                            <p class="zalando-sans text-zinc-300 text-xs">Why this assignee was suggested</p>
+                            <p class="zalando-sans text-zinc-400 text-xs">
+                                This person was the assignee on previous issues related to performance problems in the mobile app launch flow
+                            </p>
                         </div>
 
-                        <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-500 rounded-md px-1 py-0.5">
-                            <i class="fas fa-circle fa-xs text-red-400/60"></i>
-                            <p class="zalando-sans text-zinc-400 text-xs">Slack</p>
+                        <div class="w-full flex flex-col border-b border-zinc-800 gap-2 px-1 py-3">
+
+                            <p class="zalando-sans text-zinc-300 text-xs">Alternatives</p>
+
+                            <div class="w-full flex gap-1">
+                                <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-700 rounded-md px-1 py-0.5">
+                                    <img src="images/pp2.jpg" alt="" class="w-4 h-4 rounded-full object-cover">
+                                    <p class="zalando-sans text-zinc-400 text-xs">adrien</p>
+                                </div>
+                                <div class="flex justify-start items-center gap-1 border border-dashed border-zinc-700 rounded-md px-1 py-0.5">
+                                    <img src="images/pp8.jpg" alt="" class="w-4 h-4 rounded-full object-cover">
+                                    <p class="zalando-sans text-zinc-400 text-xs">jori</p>
+                                </div>
+                            </div>
+
+                            <button class="w-full flex justify-center items-center gap-1 bg-zinc-900 text-zinc-400 text-sm px-2 py-1 border border-zinc-800 rounded-md">
+                                <i class="fas fa-check fa-sm"></i>
+                                <p class="zalando-sans text-zinc-300 text-sm">Accept suggestion</p>
+                            </button>
+
                         </div>
 
-                    </div>
-
-                    <p class="zalando-sans text-zinc-500 text-sm">Duplicate of</p>
-
-                    <p class="zalando-sans text-zinc-500 text-sm">Related to</p>
-
-                </div>
-
-                <div class="absolute w-72 bottom-8 right-12 flex flex-col justify-between items-start mt-10 px-5 py-3 gap-6 bg-white/20 backdrop-blur-sm border border-white/50 rounded-2xl z-10">
-
-                    <p class="w-full zalando-sans text-zinc-400 text-md pb-2">Ask anything</p>
-
-                    <div class="flex justify-start items-center gap-2">
-                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
-                            <i class="fas fa-paperclip fa-xs text-zinc-400"></i>
-                            <p class="zalando-sans text-zinc-300 text-xs">Attach</p>
-                        </div>
-                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
-                            <i class="fas fa-globe fa-xs text-zinc-400"></i>
-                            <p class="zalando-sans text-zinc-300 text-xs">Search</p>
-                        </div>
-                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
-                            <i class="fas fa-lightbulb fa-xs text-zinc-400"></i>
-                            <p class="zalando-sans text-zinc-300 text-xs">Reason</p>
-                        </div>
                     </div>
 
                 </div>
@@ -938,12 +964,7 @@
             </div>
 
             <!-- Right Feature -->
-            <div class="relative w-1/2 mx-12 py-16">
-
-                <!-- Bottom Vignette -->
-                <div class="absolute bottom-8 w-full h-60 bg-gradient-to-b from-transparent to-zinc-950/70 z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
-                <!-- Right Vignette -->
-                <div class="absolute bottom-8 w-full h-60 bg-gradient-to-r from-transparent to-zinc-950 z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
+            <div class="relative w-1/2 h-auto flex flex-col justify-start items-start mx-12 pt-16">
 
                 <h3 class="w-full zalando-sans text-zinc-200 text-xl">
                     Parabolic MCP
@@ -952,44 +973,179 @@
                     Connect Parabolic to your favorite tools including Cursor, Claude, ChatGPT, and more.
                 </p>
 
-                <div class="w-auto flex flex-col justify-center items-start mt-10 mx-5 p-5 bg-zinc-900/70 border border-zinc-800 rounded-xl">
+                <div class="w-full h-90 relative mt-16 mb-1">
 
-                    <p class="w-full zalando-sans text-zinc-600 text-sm pb-2">//mcp.parabolic.app/sse</p>
-                    <p class="w-full zalando-sans text-zinc-500 text-sm"><span class="text-orange-300/40">"mcpServers"</span>: {</p>
-                    <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">     <span class="text-orange-300/40">"parabolic"</span>: {</p>
-                    <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">         <span class="text-orange-300/40">"command"</span>: <span class="text-sky-300/40">"ppx"</span>,</p>
-                    <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">         <span class="text-orange-300/40">"test"</span>: <span class="text-sky-300/40">"run tests till end of time"</span></p>
-                    <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">     }</p>
-                    <p class="w-full zalando-sans text-zinc-500 text-sm">}</p>
+                    <!-- Bottom Vignette -->
+                    <div class="absolute w-full h-full bg-gradient-to-b from-transparent to-zinc-950/70 z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
+                    <!-- Right Vignette -->
+                    <div class="absolute w-full h-full bg-gradient-to-r from-transparent to-zinc-950 z-20 scale-x-110 scale-y-101 pointer-events-none"></div>
 
-                </div>
+                    <div class="w-full flex flex-col justify-center items-start mt-10 mx-5 p-5 bg-zinc-900/70 border border-zinc-800 rounded-xl">
 
-                <div class="absolute w-full bottom-10 flex flex-col justify-between items-start mt-10 px-5 py-3 gap-6 bg-white/20 backdrop-blur-sm border border-white/50 rounded-2xl z-10">
+                        <p class="w-full zalando-sans text-zinc-600 text-sm pb-2">//mcp.parabolic.app/sse</p>
+                        <p class="w-full zalando-sans text-zinc-500 text-sm"><span class="text-orange-300/40">"mcpServers"</span>: {</p>
+                        <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">     <span class="text-orange-300/40">"parabolic"</span>: {</p>
+                        <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">         <span class="text-orange-300/40">"command"</span>: <span class="text-sky-300/40">"ppx"</span>,</p>
+                        <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">         <span class="text-orange-300/40">"test"</span>: <span class="text-sky-300/40">"run tests till end of time"</span></p>
+                        <p class="w-full zalando-sans text-zinc-500 text-sm" style="white-space: pre;">     }</p>
+                        <p class="w-full zalando-sans text-zinc-500 text-sm">}</p>
 
-                    <p class="w-full zalando-sans text-zinc-400 text-md pb-2">Ask anything</p>
-
-                    <div class="flex justify-start items-center gap-2">
-                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
-                            <i class="fas fa-paperclip fa-xs text-zinc-400"></i>
-                            <p class="zalando-sans text-zinc-300 text-xs">Attach</p>
-                        </div>
-                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
-                            <i class="fas fa-globe fa-xs text-zinc-400"></i>
-                            <p class="zalando-sans text-zinc-300 text-xs">Search</p>
-                        </div>
-                        <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
-                            <i class="fas fa-lightbulb fa-xs text-zinc-400"></i>
-                            <p class="zalando-sans text-zinc-300 text-xs">Reason</p>
-                        </div>
                     </div>
 
+                    <div class="absolute w-full top-25 flex flex-col justify-between items-start mt-10 px-5 py-3 gap-6 bg-white/20 backdrop-blur-sm border border-white/50 rounded-2xl z-10">
+
+                        <p class="w-full zalando-sans text-zinc-400 text-md pb-2">Ask anything</p>
+
+                        <div class="flex justify-start items-center gap-2">
+                            <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                                <i class="fas fa-paperclip fa-xs text-zinc-400"></i>
+                                <p class="zalando-sans text-zinc-300 text-xs">Attach</p>
+                            </div>
+                            <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                                <i class="fas fa-globe fa-xs text-zinc-400"></i>
+                                <p class="zalando-sans text-zinc-300 text-xs">Search</p>
+                            </div>
+                            <div class="flex justify-start items-center gap-2 bg-zinc-900/70 border border-zinc-400 px-2 py-1 rounded-full">
+                                <i class="fas fa-lightbulb fa-xs text-zinc-400"></i>
+                                <p class="zalando-sans text-zinc-300 text-xs">Reason</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 
             </div>
 
         </section>
 
+        <!-- Feature Description 3 -->
+        <section class="w-auto flex gap-6 justify-center items-center mx-12 lg:mx-110 py-12">
+
+            <div class="w-full flex flex-col justify-center items-center gap-2">
+
+                <div class="w-full flex justify-start items-center gap-2">
+                    <i class="fas fa-location-crosshairs fa-md text-zinc-400"></i>
+                    <p class="zalando-sans text-zinc-300 text-sm">Initiatives</p>
+                </div>
+
+                <p class="w-full zalando-sans text-zinc-500 text-sm">Coordinate strategic product efforts.</p>
+
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center gap-2">
+
+                <div class="w-full flex justify-start items-center gap-2">
+                    <i class="fas fa-cube fa-md text-zinc-400"></i>
+                    <p class="zalando-sans text-zinc-300 text-sm">Cross-team projects</p>
+                </div>
+
+                <p class="w-full zalando-sans text-zinc-500 text-sm">Collaborate across teams and departments.</p>
+
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center gap-2">
+
+                <div class="w-full flex justify-start items-center gap-2">
+                    <i class="fas fa-gem fa-md text-zinc-400"></i>
+                    <p class="zalando-sans text-zinc-300 text-sm">Milestones</p>
+                </div>
+
+                <p class="w-full zalando-sans text-zinc-500 text-sm">Break projects down into concrete phases.</p>
+
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center gap-2">
+
+                <div class="w-full flex justify-start items-center gap-2">
+                    <i class="fas fa-chart-simple fa-md text-zinc-400"></i>
+                    <p class="zalando-sans text-zinc-300 text-sm">Progress insights</p>
+                </div>
+
+                <p class="w-full zalando-sans text-zinc-500 text-sm">Track scope, velocity, and progress over time.</p>
+
+            </div>
+
+        </section>
+
+        <!-- CTA Buttons -->
+        <section class="w-full flex justify-between items-center gap-4 px-12 lg:px-110 pb-24">
+
+            <p class="zalando-sans text-zinc-100 text-4xl">Plan the present. Build the future.</p>
+
+            <div class="flex items-center gap-4">
+                <button class="bg-zinc-800 zalando-sans text-sm text-white px-4 py-2 rounded-lg border border-white/30">Contact sales</button>
+                <button class="bg-zinc-200 zalando-sans text-sm text-zinc-900 px-4 py-2 rounded-lg">Get started</button>
+            </div>
+
+        </section>
+
     </main>
+
+    <footer class="flex justify-between items-start px-12 lg:px-110 py-12 zalando-sans border-t border-zinc-800">
+        
+        <div class="flex flex-col justify-start gap-2">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-circle-dot fa-md text-zinc-100"></i>
+                <p class="zalando-sans text-zinc-100 text-md">Parabolic</p>
+            </div>
+            <p class="zalando-sans text-zinc-400 text-xs">Mock Website</p>
+            <p class="zalando-sans text-zinc-400 text-xs">Developed by Hrishav Saha</p>
+        </div>
+
+        <div class="flex flex-col justify-start gap-2">
+            <p class="zalando-sans text-zinc-100 text-md mb-4">Features</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Plan</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Build</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Insights</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Customer Requests</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Parabolic Asks</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Security</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Mobile</p>
+        </div>
+
+        <div class="flex flex-col justify-start gap-2">
+            <p class="zalando-sans text-zinc-100 text-md mb-4">Product</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Pricing</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Method</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Integrations</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Changelog</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Documentation</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Download</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Switch</p>
+        </div>
+
+        <div class="flex flex-col justify-start gap-2">
+            <p class="zalando-sans text-zinc-100 text-md mb-4">Company</p>
+            <p class="zalando-sans text-zinc-500 text-sm">About</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Customers</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Careers</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Now</p>
+            <p class="zalando-sans text-zinc-500 text-sm">README</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Quality</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Brand</p>
+        </div>
+
+        <div class="flex flex-col justify-start gap-2">
+            <p class="zalando-sans text-zinc-100 text-md mb-4">Resources</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Developers</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Status</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Startups</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Report vulnerability</p>
+            <p class="zalando-sans text-zinc-500 text-sm">DPA</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Privacy</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Terms</p>
+        </div>
+
+        <div class="flex flex-col justify-start gap-2">
+            <p class="zalando-sans text-zinc-100 text-md mb-4">Connect</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Contact us</p>
+            <p class="zalando-sans text-zinc-500 text-sm">Community</p>
+            <p class="zalando-sans text-zinc-500 text-sm">X (Twitter)</p>
+            <p class="zalando-sans text-zinc-500 text-sm">GitHub</p>
+            <p class="zalando-sans text-zinc-500 text-sm">YouTube</p>
+        </div>
+
+    </footer>
 
 </body>
 </html>
